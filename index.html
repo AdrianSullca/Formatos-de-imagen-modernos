@@ -8,30 +8,111 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" href="./favicoo.png" type="image/png" />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <header class="bg-blue-500 text-white text-center p-5">
-      <h1 class="text-4xl">Image Format Experiment</h1>
+    <header class="bg-blue-500 text-white text-center">
+      <h1 class="text-4xl py-4">Image Format Experiment</h1>
+      <div class="bg-gray-500 w-full flex justify-center py-2 gap-24">
+        <a href="./html/avif.html">Avif</a>
+        <a href="./html/tasca-3.html">Tasca 3</a>
+      </div>
     </header>
     <main
       class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
     >
       <div>
-        <img src="images/logotip.png" alt="Example 1" class="w-full" />
+        <a href="./html/logo.html">
+          <img src="images/logo_steam.png" alt="Example 1" class="w-full" />
+        </a>
         <div class="image-info"></div>
+        <div class="flex flex-col gap-2">
+          <a
+            class="bg-gray-300 py-2 px-4 rounded"
+            href="./html/logo-webp-avif.html"
+          >
+            <button class="">Ver Webp y Avif</button>
+          </a>
+          <a
+            class="bg-gray-300 py-2 px-4 rounded"
+            href="./html/logo.html"
+          >
+            <button class="">Ver formatos diferentes</button>
+          </a>
+        </div>
       </div>
       <div>
-        <img src="images/plujaEstels.jpg" alt="Example 2" class="w-full" />
+        <a href="./html/lluvia-estrellas.html">
+          <img src="images/lluv-alta.jpg" alt="Example 2" class="w-full" />
+        </a>
         <div class="image-info"></div>
+        <div class="flex flex-col gap-2">
+          <a
+            class="bg-gray-300 py-2 px-4 rounded"
+            href="./html/lluvia-webp-avif.html"
+          >
+            <button class="">Ver Webp y Avif</button>
+          </a>
+          <a
+            class="bg-gray-300 py-2 px-4 rounded"
+            href="./html/lluvia-estrellas.html"
+          >
+            <button class="">Ver formatos diferentes</button>
+          </a>
+        </div>
       </div>
       <div>
-        <img src="images/postaDeSol.jpg" alt="Example 3" class="w-full" />
+        <a href="./html/montaña.html">
+          <img src="images/montaña.jpg" alt="Example 3" class="w-full" />
+        </a>
         <div class="image-info"></div>
+        <div class="flex flex-col gap-2">
+          <a
+            class="bg-gray-300 py-2 px-4 rounded"
+            href="./html/montaña-webp-avif.html"
+          >
+            <button class="">Ver Webp y Avif</button>
+          </a>
+          <a
+            class="bg-gray-300 py-2 px-4 rounded"
+            href="./html/montaña.html"
+          >
+            <button class="">Ver formatos diferentes</button>
+          </a>
+        </div>
       </div>
       <div>
-        <img src="images/transparency.png" alt="Example 3" class="w-full" />
+        <a href="./html/degradado.html">
+          <img src="images/degradado.png" alt="Example 3" class="w-full" />
+        </a>
         <div class="image-info"></div>
+        <div class="flex flex-col gap-2">
+          <a
+            class="bg-gray-300 py-2 px-4 rounded"
+            href="./html/degradado-webp-avif.html"
+          >
+            <button class="">Ver Webp y Avif</button>
+          </a>
+          <a
+            class="bg-gray-300 py-2 px-4 rounded"
+            href="./html/degradado.html"
+          >
+            <button class="">Ver formatos diferentes</button>
+          </a>
+        </div>
+      </div>
+      <div>
+        <a href="">
+          <img src="images/mj-gif.gif" alt="Example 3" class="w-full" />
+        </a>
+        <div class="image-info"></div>
+        <a
+          class="bg-gray-300 py-2 px-4 rounded"
+          href="./html/mj-webp-avif.html"
+        >
+          <button class="mt-6">Ver Webp y Avif</button>
+        </a>
       </div>
     </main>
     <script src="scripts/main.js"></script>

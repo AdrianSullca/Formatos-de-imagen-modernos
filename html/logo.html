@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 gap-5"
+    >
+      <p class="col-start-1 col-end-3 text-left font-bold">Logo</p>
+      <div class="shadow-lg rounded-xl p-4 bg-gray-200">
+        <img
+          src="../images/logo_steam.png"
+          alt=""
+          class="w-full rounded-t-xl"
+        />
+        <div class="image-info my-4">
+          <p>bits: 24</p>
+        </div>
+      </div>
+      <div class="shadow-lg rounded-xl p-4 bg-gray-200">
+        <img
+          src="../images/logo_steam-8bit.png"
+          alt=""
+          class="w-full rounded-t-xl"
+        />
+        <div class="image-info my-4">
+          <p>bits: 8</p>
+        </div>
+      </div>
+      <div class="shadow-lg rounded-xl p-4 bg-gray-200">
+        <img
+          src="../images/logo_steam-gif.gif"
+          alt=""
+          class="w-full rounded-t-xl"
+        />
+        <div class="image-info my-4"></div>
+      </div>
+      <div class="shadow-lg rounded-xl p-4 bg-gray-200">
+        <img
+          src="../images/logo_steam-compresion-9.png"
+          alt=""
+          class="w-full rounded-t-xl"
+        />
+        <div class="image-info my-4">Nivel de compresion: 9</div>
+      </div>
+      <div class="shadow-lg rounded-xl p-4 bg-gray-200">
+        <img
+          src="../images/logo_steam-compresion-2.png"
+          alt=""
+          class="w-full rounded-t-xl"
+        />
+        <div class="image-info my-4">Nivel de compresion: 2</div>
+      </div>
+
+      <div class="col-start-1 col-end-3 shadow-lg rounded-xl text-left p-5">
+        <p class="font-bold">
+          Qué formato es lo más óptimo por este tipo de imagen y por qué?
+        </p>
+        <p>EL png ya que la imagen de este logo tiene transparencia</p>
+        <br />
+        <p class="font-bold">
+          Se podría reducir todavía más la medida? Perdería calidad?
+        </p>
+        <p>
+          El peso se podria reducir un poco al exportar la imagen png en 8 bits
+          o gif, aunque la calidad se pierde un poco no es casi visible.
+        </p>
+      </div>
+
+      <div
+        class="col-start-1 col-end-3 shadow-lg rounded-xl text-left p-5 bg-purple-100"
+      >
+        <p class="font-bold">
+          Qué te indica Lighthouse sobre el rendimiento de imágenes de tus
+          páginas? Cuáles son los principales problemas? Qué recomendaciones
+          ofrece?
+        </p>
+        <p>
+          Sobre el rendimiento Lighthouse indica el tiempo que tarda en aparecer
+          el primer contenido (First Contentful Paint) , el tiempo que que tarda
+          en cargar el elemento mas grande (Largest Contentful Paint), la
+          rapidez con que el contenido de la pagina se carga (speed index), la
+          cantidad de desplazamineto inesperado de los elementos en la pagina
+          mientras se carga (Cumulative Layout Shift), y la cantidad total de
+          tiempo que la pagina esta bloqueada(TBT).
+          <br />
+          <br />
+          El principal problema es la metrica de Largest Contentful Paint y
+          apunta una imagen,lo que para mejorarlo ofrece usar formatos de imagen
+          comom webP o Avif ya que estos ofrecen mejor compresion que png o
+          jpeg, lo que hace que las descargas sean mas rapidas y que consuman
+          menos datos.
+        </p>
+        <br />
+        <p class="font-bold">
+          Simula una conexión lenta 3G y analiza la carga de las imágenes. Qué
+          observas?
+        </p>
+        <p>
+          Al simular la carga de la pagina en 3G se ve como es mucho mas lenta y
+          las imagenes tardan mas en cargarse y se nota mucho el tiempo de
+          carga. Nos muestra una lista con el nombre del archivo que se carga ,
+          su estado, el tipo o formato, el iniciador, el tamaño que tiene este
+          en Bytes, y el tiempo de carga
+        </p>
+      </div>
+    </main>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

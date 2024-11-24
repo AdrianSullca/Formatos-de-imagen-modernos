@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <main class="min-h-screen grid grid-rows-auto-1fr-auto">
+      <section
+        class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 gap-5"
+      >
+        <p class="col-start-1 col-end-3 text-left font-bold">Degradado</p>
+        <div class="shadow-lg rounded-xl p-4 bg-gray-200">
+          <img
+            src="../images/degradado.png"
+            alt=""
+            class="w-full rounded-t-xl"
+          />
+          <div class="image-info my-4"></div>
+        </div>
+        <div class="shadow-lg rounded-xl p-4 bg-gray-200">
+          <img
+            src="../images/degradado-jpg.jpg"
+            alt=""
+            class="w-full rounded-t-xl"
+          />
+          <div class="image-info my-4"></div>
+        </div>
+        <div class="shadow-lg rounded-xl p-4 bg-gray-200">
+          <img
+            src="../images/degradado-webp.webp"
+            alt=""
+            class="w-full rounded-t-xl"
+          />
+          <div class="image-info my-4"></div>
+        </div>
+        <div class="shadow-lg rounded-xl p-4 bg-gray-200">
+          <img
+            src="../images/degradado-avif.avif"
+            alt=""
+            class="w-full rounded-t-xl"
+          />
+          <div class="image-info my-4"></div>
+        </div>
+      </section>
+    </main>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-3 gap-5"
+    >
+      <div class="shadow-lg rounded-xl">
+        <img src="../images/paisaje.jpg" alt="" class="w-full rounded-t-xl" />
+        <div class="image-info my-4"></div>
+      </div>
+      <div class="shadow-lg rounded-xl">
+        <img
+          src="../images/paisaje-webp.webp"
+          alt=""
+          class="w-full rounded-t-xl"
+        />
+        <div class="image-info my-4"></div>
+      </div>
+      <div class="shadow-lg rounded-xl">
+        <img
+          src="../images/paisaje-avif.avif"
+          alt=""
+          class="w-full rounded-t-xl"
+        />
+        <div class="image-info my-4"></div>
+      </div>
+
+      <div class="shadow-lg rounded-xl">
+        <img src="../images/animal.jpg" alt="" class="w-full rounded-t-xl" />
+        <div class="image-info my-4"></div>
+      </div>
+      <div class="shadow-lg rounded-xl">
+        <img
+          src="../images/animal-webp.webp"
+          alt=""
+          class="w-full rounded-t-xl"
+        />
+        <div class="image-info my-4"></div>
+      </div>
+      <div class="shadow-lg rounded-xl">
+        <img
+          src="../images/animal-avif.avif"
+          alt=""
+          class="w-full rounded-t-xl"
+        />
+        <div class="image-info my-4"></div>
+      </div>
+      <div class="shadow-lg rounded-xl">
+        <img
+          src="../images/noche-estrellada.jpg"
+          alt=""
+          class="w-full rounded-t-xl"
+        />
+        <div class="image-info my-4"></div>
+      </div>
+      <div class="shadow-lg rounded-xl">
+        <img
+          src="../images/noche-estrellada-webp.webp"
+          alt=""
+          class="w-full rounded-t-xl"
+        />
+        <div class="image-info my-4"></div>
+      </div>
+      <div class="shadow-lg rounded-xl">
+        <img
+          src="../images/noche-estrellada-avif.avif"
+          alt=""
+          class="w-full rounded-t-xl"
+        />
+        <div class="image-info my-4"></div>
+      </div>
+
+      <div class="col-start-1 col-end-3 shadow-lg rounded-xl text-left p-5">
+        <table
+          id="image-savings-table"
+          class="w-full border-collapse border border-gray-300"
+        >
+          <thead>
+            <tr>
+              <th class="border border-gray-300 p-2 bg-gray-100">Nom Imatge</th>
+              <th class="border border-gray-300 p-2 bg-gray-100">
+                Mida Original (KB)
+              </th>
+              <th class="border border-gray-300 p-2 bg-gray-100">WebP</th>
+              <th class="border border-gray-300 p-2 bg-gray-100">AVIF</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="col-start-1 col-end-3 shadow-lg rounded-xl text-left p-5">
+        <p class="font-bold">
+          Es Avif una buena opcion de sustitucion para WebP?
+        </p>
+        <p>
+          Desde mi punto de vista al realizar esta practica pienso que avif ha
+          sido superior a webp ya que al ser comprimida desde una imagen
+          original en formato jpg, avif ofrece mayor calidad y tambien un peso
+          de imagen mucho menor a lo que nos daria si comprimiesemos hacia el formato de webp
+        </p>
+      </div>
+    </main>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>
