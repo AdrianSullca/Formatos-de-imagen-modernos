@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center">
+      <h1 class="text-4xl py-4">Image Format Experiment</h1>
+      <div class="bg-gray-500 w-full flex justify-center py-2 gap-24">
+        <a href="./avif.html">Avif</a>
+        <a href="./tasca-3.html">Tasca 3</a>
+        <a href="./tasca-4.html">Tasca 4</a>
+      </div>
+    </header>
+    <main class="flex flex-col text-center items-center">
+      <div class="p-5 rounded-xl shadow-2xl border m-5">
+        <picture>
+          <source
+            srcset="../images/montaña-avif.avif"
+            media="(max-width: 550px)"
+          />
+          <source
+            srcset="../images/animal-avif.avif"
+            media="(min-width: 551px) and (max-width:1000px)"
+          />
+          <img src="../images/casas.jpg" alt="Foto de tigre" />
+        </picture>
+      </div>
+    </main>
+    <br />
+    <br />
+    <div class="col-start-1 col-end-3 shadow-lg rounded-xl text-left p-5">
+      <p class="font-bold">
+        ¿Quin avantatge té utilitzar picture per a direcció d’art en comparació
+        amb srcset?
+      </p>
+      <p>
+        Picture a diferencia de srcset permite tener un mayor control ya que se
+        puede especificar exactamente que imagen mostrara el navegador tras
+        cierta condicion especificada en el atributo de media. Y el img es la
+        imagen que mostrara el navegador en caso de que ninguna condicion se
+        cumpla.
+      </p>
+    </div>
+  </body>
+</html>

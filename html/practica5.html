@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/lightbox2/dist/css/lightbox.min.css"
+    />
+    <link rel="stylesheet" href="../css/lightbox.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center">
+      <h1 class="text-4xl py-4">Image Format Experiment</h1>
+      <div class="bg-gray-500 w-full flex justify-center py-2 gap-24">
+        <a href="./avif.html">Avif</a>
+        <a href="./tasca-3.html">Tasca 3</a>
+        <a href="./tasca-4.html">Tasca 4</a>
+      </div>
+    </header>
+    <main class="flex flex-col text-center items-center">
+      <section class="light-box-container my-10">
+        <div class="container-img">
+          <a href="../images/animal-avif.avif" data-lightbox="example-1">
+            <img src="../images/animal-avif.avif" alt="Tigre">
+          </a>
+        </div>
+        <div class="container-img">
+          <a href="../images/montaña-avif.avif" data-lightbox="example-1">
+            <img src="../images/montaña-avif.avif" alt="Montaña">
+          </a>
+        </div>
+        <div class="container-2-img">
+          <a href="../images/lago.webp" data-lightbox="example-1">
+            <img src="../images/lago.webp" alt="Lago">
+          </a>
+        </div>
+        <div class="container-2-img">
+          <a href="../images/casas.jpg" data-lightbox="example-1">
+            <img src="../images/casas.jpg" alt="Casas">
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="../node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+  </body>
+</html>

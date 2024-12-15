@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center">
+      <h1 class="text-4xl py-4">Image Format Experiment</h1>
+      <div class="bg-gray-500 w-full flex justify-center py-2 gap-24">
+        <a href="./avif.html">Avif</a>
+        <a href="./tasca-3.html">Tasca 3</a>
+        <a href="./tasca-4.html">Tasca 4</a>
+      </div>
+    </header>
+    <main class="flex flex-col text-center items-center">
+      <div class="p-5 rounded-xl shadow-2xl border m-5">
+        <img src="../images/casas.jpg" alt="Foto de casas" />
+      </div>
+
+      <br />
+
+      <div class="p-5 rounded-xl shadow-2xl border m-5">
+        <img src="../images/barcos.avif" alt="Barcos en un lago" />
+      </div>
+
+      <br />
+
+      <div class="p-5 rounded-xl shadow-2xl border m-5">
+        <img src="../images/lago.webp" alt="Foto de un lago" />
+      </div>
+    </main>
+    <br />
+    <br />
+    <div class="col-start-1 col-end-3 shadow-lg rounded-xl text-left p-5">
+      <p class="font-bold">
+        ¿Por qué crees que el atributo alt es importante para las imagenes?
+      </p>
+      <p>
+        El atributo alt es importante porque si por alguna razón ya sea de
+        servidor o conexion la imagen no se llegase a cargar pues se mostraria
+        el texto del atributo alt.
+      </p>
+    </div>
+  </body>
+</html>
